@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>PortFolio</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto+Condensed:wght@400;700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="style\style.css" />
+  </head>
+
+  <body>
+    <nav class="bg-white mb-20">
+      <div class="max-w-7xl mx-auto px-2 sm:px-6 lg:px-8">
+        <div class="relative flex items-center justify-between h-16">
+          <div class="flex-shrink-0 text-black text-lg font-bold">Hashim</div>
+
+          <input type="checkbox" id="menu-toggle" class="hidden" />
+          <label
+            for="menu-toggle"
+            class="absolute inset-y-0 right-0 flex items-center sm:hidden cursor-pointer p-2 rounded-md text-black hover:text-gray-500 hover:bg-gray-100 focus:outline-none focus:ring-2 focus:ring-inset focus:ring-gray-300"
+          >
+            <span class="sr-only">Open main menu</span>
+            <svg
+              class="block h-6 w-6"
+              xmlns="http://www.w3.org/2000/svg"
+              fill="none"
+              viewBox="0 0 24 24"
+              stroke="currentColor"
+              aria-hidden="true"
+            >
+              <path
+                stroke-linecap="round"
+                stroke-linejoin="round"
+                stroke-width="2"
+                d="M4 6h16M4 12h16m-7 6h7"
+              />
+            </svg>
+          </label>
+          <!-- Mobile Menu -->
+          <div id="mobile-menu" class="fixed inset-0 bg-white z-50 hidden">
+            <div class="flex flex-col px-2 pt-2 pb-3 space-y-1">
+              <a
+                href="home.html"
+                class="text-black active hover:bg-gray-100 hover:text-gray-700 block px-3 py-2 rounded-md text-base font-medium"
+                >Home</a
+              >
+              <a
+                href="personalProfile.html"
+                class="text-black hover:bg-gray-100 hover:text-gray-700 block px-3 py-2 rounded-md text-base font-medium"
+                >Personal Profile</a
+              >
+              <a
+                href="galleryPage.html"
+                class="text-black hover:bg-gray-100 hover:text-gray-700 block px-3 py-2 rounded-md text-base font-medium"
+                >Gallery Page</a
+              >
+              <a
+                href="careerGoals.html"
+                class="text-black hover:bg-gray-100 hover:text-gray-700 block px-3 py-2 rounded-md text-base font-medium"
+                >Career Goals</a
+              >
+              <a
+                href="projects.html"
+                class="text-black hover:bg-gray-100 hover:text-gray-700 block px-3 py-2 rounded-md text-base font-medium"
+                >Projects</a
+              >
+              <a
+                href="skillsAndInterest.html"
+                class="text-black hover:bg-gray-100 hover:text-gray-700 block px-3 py-2 rounded-md text-base font-medium"
+                >Skills & Interests</a
+              >
+              <a
+                href="contact-us.html"
+                class="text-black hover:bg-gray-100 hover:text-gray-700 block px-3 py-2 rounded-md text-base font-medium"
+                >Contact Us</a
+              >
+            </div>
+          </div>
+          <!-- Desktop Menu -->
+          <div class="hidden sm:block sm:ml-6">
+            <div class="flex space-x-4">
+              <a
+                href="home.html"
+                class="text-black active hover:bg-gray-100 hover:text-gray-700 px-3 py-2 rounded-md text-sm font-medium"
+                >Home</a
+              >
+              <a
+                href="personalProfile.html"
+                class="text-black hover:bg-gray-100 hover:text-gray-700 px-3 py-2 rounded-md text-sm font-medium"
+                >Personal Profile</a
+              >
+              <a
+                href="galleryPage.html"
+                class="text-black hover:bg-gray-100 hover:text-gray-700 px-3 py-2 rounded-md text-sm font-medium"
+                >Gallery Page</a
+              >
+              <a
+                href="careerGoals.html"
+                class="text-black hover:bg-gray-100 hover:text-gray-700 px-3 py-2 rounded-md text-sm font-medium"
+                >Career Goals</a
+              >
+              <a
+                href="projects.html"
+                class="text-black hover:bg-gray-100 hover:text-gray-700 px-3 py-2 rounded-md text-sm font-medium"
+                >Projects</a
+              >
+              <a
+                href="skillsAndInterest.html"
+                class="text-black hover:bg-gray-100 hover:text-gray-700 px-3 py-2 rounded-md text-sm font-medium"
+                >Skills & Interests</a
+              >
+              <a
+                href="contact-us.html"
+                class="text-black hover:bg-gray-100 hover:text-gray-700 px-3 py-2 rounded-md text-sm font-medium"
+                >Contact Us</a
+              >
+            </div>
+          </div>
+        </div>
+      </div>
+    </nav>
+
+    <div class="contact w-full flex justify-center">
+      <section
+        class="contact-page h-full rounded-lg shadow-md overflow-hidden mx-4"
+        style="
+          background: linear-gradient(
+            92deg,
+            rgb(249, 248, 230) 0%,
+            rgb(200, 229, 241) 50%,
+            rgba(0, 255, 221, 0.34) 100%
+          );
+        "
+      >
+        <label class="mt-4 block" for="Name">Name</label>
+        <input class="bg-white w-full h-14 rounded-lg" type="text" />
+        <label class="mt-4 block" for="Name">Email</label>
+        <input class="bg-white w-full h-14 rounded-lg" type="text" />
+        <label class="mt-4 block" for="Name">Subject</label>
+        <input class="bg-white w-full h-14 rounded-lg" type="text" />
+        <label class="mt-4 block" for="Name">Message</label>
+        <input class="bg-white w-full h-24 rounded-lg" type="text" />
+
+        <div class="pt-8 flex justify-center">
+          <button class="bg-slate-700 text-white px-8 py-4 rounded-md">
+            Submit
+          </button>
+        </div>
+      </section>
+    </div>
+  </body>
+</html>

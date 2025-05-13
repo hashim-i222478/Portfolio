@@ -1,0 +1,387 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Portfolio</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto+Condensed:wght@400;700&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css"
+    />
+
+    <link rel="stylesheet" href="style\style.css" />
+    <link rel="stylesheet" href="style\animations.css" />
+  </head>
+
+  <body>
+    <nav class="bg-white mb-20 sticky top-0 z-50 shadow-md">
+      <div class="max-w-7xl mx-auto px-2 sm:px-6 lg:px-8">
+        <div class="relative flex items-center justify-between h-16">
+          <div class="flex-shrink-0 text-black text-lg font-bold">Hashim</div>
+
+          <input type="checkbox" id="menu-toggle" class="hidden" />
+          <label
+            for="menu-toggle"
+            class="absolute inset-y-0 right-0 flex items-center sm:hidden cursor-pointer p-2 rounded-md text-black hover:text-gray-500 hover:bg-gray-100 focus:outline-none focus:ring-2 focus:ring-inset focus:ring-gray-300"
+          >
+            <span class="sr-only">Open main menu</span>
+            <svg
+              class="block h-6 w-6"
+              xmlns="http://www.w3.org/2000/svg"
+              fill="none"
+              viewBox="0 0 24 24"
+              stroke="currentColor"
+              aria-hidden="true"
+            >
+              <path
+                stroke-linecap="round"
+                stroke-linejoin="round"
+                stroke-width="2"
+                d="M4 6h16M4 12h16m-7 6h7"
+              />
+            </svg>
+          </label>
+          <!-- Mobile Menu -->
+          <div id="mobile-menu" class="fixed inset-0 bg-white z-50 hidden">
+            <div class="flex flex-col px-2 pt-2 pb-3 space-y-1">
+              <a
+                href="home.html"
+                class="text-black active hover:bg-gray-100 hover:text-gray-700 block px-3 py-2 rounded-md text-base font-medium"
+                >Home</a
+              >
+              <a
+                href="personalProfile.html"
+                class="text-black hover:bg-gray-100 hover:text-gray-700 block px-3 py-2 rounded-md text-base font-medium"
+                >Personal Profile</a
+              >
+              <a
+                href="galleryPage.html"
+                class="text-black hover:bg-gray-100 hover:text-gray-700 block px-3 py-2 rounded-md text-base font-medium"
+                >Gallery Page</a
+              >
+              <a
+                href="careerGoals.html"
+                class="text-black hover:bg-gray-100 hover:text-gray-700 block px-3 py-2 rounded-md text-base font-medium"
+                >Career Goals</a
+              >
+              <a
+                href="projects.html"
+                class="text-black hover:bg-gray-100 hover:text-gray-700 block px-3 py-2 rounded-md text-base font-medium"
+                >Projects</a
+              >
+              <a
+                href="skillsAndInterest.html"
+                class="text-black hover:bg-gray-100 hover:text-gray-700 block px-3 py-2 rounded-md text-base font-medium"
+                >Skills & Interests</a
+              >
+              <a
+                href="contact-us.html"
+                class="text-black hover:bg-gray-100 hover:text-gray-700 block px-3 py-2 rounded-md text-base font-medium"
+                >Contact Us</a
+              >
+            </div>
+          </div>
+
+          <!-- Desktop Menu -->
+          <div class="hidden sm:block sm:ml-6">
+            <div class="flex space-x-4">
+              <a
+                href="home.html"
+                class="text-black hover:bg-gray-100 hover:text-gray-700 px-3 py-2 rounded-md text-sm font-medium"
+                >Home</a
+              >
+              <a
+                href="personalProfile.html"
+                class="text-black hover:bg-gray-100 hover:text-gray-700 px-3 py-2 rounded-md text-sm font-medium"
+                >Personal Profile</a
+              >
+              <a
+                href="galleryPage.html"
+                class="text-black hover:bg-gray-100 hover:text-gray-700 px-3 py-2 rounded-md text-sm font-medium"
+                >Gallery Page</a
+              >
+              <a
+                href="careerGoals.html"
+                class="text-black hover:bg-gray-100 hover:text-gray-700 px-3 py-2 rounded-md text-sm font-medium"
+                >Career Goals</a
+              >
+              <a
+                href="projects.html"
+                class="text-black active hover:bg-gray-100 hover:text-gray-700 px-3 py-2 rounded-md text-sm font-medium"
+                >Projects</a
+              >
+              <a
+                href="skillsAndInterest.html"
+                class="text-black hover:bg-gray-100 hover:text-gray-700 px-3 py-2 rounded-md text-sm font-medium"
+                >Skills & Interests</a
+              >
+              <a
+                href="contact-us.html"
+                class="text-black hover:bg-gray-100 hover:text-gray-700 px-3 py-2 rounded-md text-sm font-medium"
+                >Contact Us</a
+              >
+            </div>
+          </div>
+        </div>
+      </div>
+    </nav>
+    <section class="md:h-full flex items-center text-gray-600">
+      <div class="container px-5 py-12 mx-auto">
+        <div class="text-center mb-12">
+          <h1 class="text-4xl md:text-5xl text-gray-700 font-semibold animate-fadeIn">
+            My Projects
+          </h1>
+        </div>
+        <div class="flex flex-wrap -m-4">
+          <div class="p-4 sm:w-1/2 lg:w-1/3">
+            <div
+              class="h-full border-2 border-gray-200 border-opacity-60 rounded-lg overflow-hidden shadow-lg hover-lift reveal-left"
+            >
+              <img
+                src="assets\Images\project.png"
+                alt="project-image"
+                class="lg:h-72 md:h-48 w-full object-cover object-cover object-center"
+              />
+              <div
+                class="p-6 h-full"
+                style="
+                  background: linear-gradient(
+                    92deg,
+                    rgb(249, 248, 230) 0%,
+                    rgb(200, 229, 241) 50%,
+                    rgba(0, 255, 221, 0.34) 100%
+                  );
+                "
+              >
+                <h2 class="text-base font-medium text-indigo">AutoParts Hub</h2>
+                <h1 class="text-2xl font-semibold mb-3">
+                  ReactJs, Spring Boot
+                </h1>
+                <p class="leading-relaxed mb-3">
+                  Your trusted source for quality auto parts, providing
+                  everything you need to keep your vehicle running smoothly.
+                  From engines to accessories, we’ve got you covered with
+                  reliable products and expert support.
+                </p>
+                <div class="flex items-center flex-wrap">
+                  <a
+                    href="https://github.com/hashim-i222478"
+                    class="text-gray-700 inline-flex items-center md:mb-2 lg:mb-0"
+                    ><i class="fa-brands fa-github text-2xl"> </i
+                  ></a>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="p-4 sm:w-1/2 lg:w-1/3">
+            <div
+              class="h-full border-2 border-gray-200 border-opacity-60 rounded-lg overflow-hidden shadow-lg hover-lift reveal"
+            >
+              <img
+                src="assets\Images\project2.jpg"
+                alt="project-image"
+                class="lg:h-72 md:h-48 w-full object-cover object-cover object-center"
+              />
+              <div
+                class="p-6 h-full"
+                style="
+                  background: linear-gradient(
+                    92deg,
+                    rgb(249, 248, 230) 0%,
+                    rgb(200, 229, 241) 50%,
+                    rgba(0, 255, 221, 0.34) 100%
+                  );
+                "
+              >
+                <h2 class="text-base font-medium text-indigo">My Portfolio</h2>
+                <h1 class="text-2xl font-semibold mb-3">Html, Css, Js</h1>
+                <p class="leading-relaxed mb-3">
+                  Welcome to my portfolio! I’m Hashim, a passionate software
+                  engineering student with a focus on web development. Explore
+                  my projects, skills, and journey as I grow into a full-stack
+                  developer, creating dynamic and user-friendly applications.
+                </p>
+                <div class="flex items-center flex-wrap">
+                  <a
+                    href="https://github.com/hashim-i222478"
+                    class="text-gray-700 inline-flex items-center md:mb-2 lg:mb-0"
+                    ><i class="fa-brands fa-github text-2xl"> </i
+                  ></a>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="p-4 sm:w-1/2 lg:w-1/3">
+            <div
+              class="h-full border-2 border-gray-200 border-opacity-60 rounded-lg overflow-hidden shadow-lg hover-lift reveal-right"
+            >
+              <img
+                src="assets\Images\project3.jpg"
+                alt="project-image"
+                class="lg:h-72 md:h-48 w-full object-cover object-cover object-center"
+              />
+              <div
+                class="p-6 h-full"
+                style="
+                  background: linear-gradient(
+                    92deg,
+                    rgb(249, 248, 230) 0%,
+                    rgb(200, 229, 241) 50%,
+                    rgba(0, 255, 221, 0.34) 100%
+                  );
+                "
+              >
+                <h2 class="text-base font-medium text-indigo">Task Manager</h2>
+                <h1 class="text-2xl font-semibold mb-3">
+                  Html, Css, ExpressJs
+                </h1>
+                <p class="leading-relaxed mb-3">
+                  Check out my fun little To-Do app! It's a simple but effective
+                  tool for keeping track of tasks, showcasing my love for
+                  building functional and efficient web applications. Stay
+                  organized and enjoy the simplicity!
+                </p>
+                <div class="flex items-center flex-wrap">
+                  <a
+                    href="https://github.com/hashim-i222478"
+                    class="text-gray-700 inline-flex items-center md:mb-2 lg:mb-0"
+                    ><i class="fa-brands fa-github text-2xl"> </i
+                  ></a>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="p-4 sm:w-1/2 lg:w-1/3">
+            <div
+              class="h-full border-2 border-gray-200 border-opacity-60 rounded-lg overflow-hidden shadow-lg hover-lift reveal-left"
+            >
+              <img
+                src="assets\Images\project6.jpg"
+                alt="project-image"
+                class="lg:h-72 md:h-48 w-full object-cover object-cover object-center"
+              />
+              <div
+                class="p-6 h-full"
+                style="
+                  background: linear-gradient(
+                    92deg,
+                    rgb(249, 248, 230) 0%,
+                    rgb(200, 229, 241) 50%,
+                    rgba(0, 255, 221, 0.34) 100%
+                  );
+                "
+              >
+                <h2 class="text-base font-medium text-indigo">
+                  Student Registration Form
+                </h2>
+                <h1 class="text-2xl font-semibold mb-3">
+                  Html, Css, Spring Boot
+                </h1>
+                <p class="leading-relaxed mb-3">
+                  Explore my Student Registration Form app! Designed to
+                  streamline the student registration process, it demonstrates
+                  my ability to create user-friendly forms with validation and
+                  smooth user experience.
+                </p>
+                <div class="flex items-center flex-wrap">
+                  <a
+                    href="https://github.com/hashim-i222478"
+                    class="text-gray-700 inline-flex items-center md:mb-2 lg:mb-0"
+                    ><i class="fa-brands fa-github text-2xl"> </i
+                  ></a>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="p-4 sm:w-1/2 lg:w-1/3">
+            <div
+              class="h-full border-2 border-gray-200 border-opacity-60 rounded-lg overflow-hidden shadow-lg hover-lift reveal"
+            >
+              <img
+                src="assets\Images\project5.jpg"
+                alt="project-image"
+                class="lg:h-72 md:h-48 w-full object-cover object-cover object-center"
+              />
+              <div
+                class="p-6 h-full"
+                style="
+                  background: linear-gradient(
+                    92deg,
+                    rgb(249, 248, 230) 0%,
+                    rgb(200, 229, 241) 50%,
+                    rgba(0, 255, 221, 0.34) 100%
+                  );
+                "
+              >
+                <h2 class="text-base font-medium text-indigo">Crud-App</h2>
+                <h1 class="text-2xl font-semibold mb-3">React, Asp.Net</h1>
+                <p class="leading-relaxed mb-3">
+                  Check out my Basic CRUD App for Schools! This application
+                  handles essential operations like creating, reading, updating,
+                  and deleting student data, demonstrating my backend skills and
+                  ability to build functional school management tools.
+                </p>
+                <div class="flex items-center flex-wrap">
+                  <a
+                    href="https://github.com/hashim-i222478"
+                    class="text-gray-700 inline-flex items-center md:mb-2 lg:mb-0"
+                    ><i class="fa-brands fa-github text-2xl"> </i
+                  ></a>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="p-4 sm:w-1/2 lg:w-1/3">
+            <div
+              class="h-full border-2 border-gray-200 border-opacity-60 rounded-lg overflow-hidden shadow-lg hover-lift reveal-right"
+            >
+              <img
+                src="assets\Images\project4.jpg"
+                alt="project-image"
+                class="lg:h-72 md:h-48 w-full object-cover object-cover object-center"
+              />
+              <div
+                class="p-6 h-full"
+                style="
+                  background: linear-gradient(
+                    92deg,
+                    rgb(249, 248, 230) 0%,
+                    rgb(200, 229, 241) 50%,
+                    rgba(0, 255, 221, 0.34) 100%
+                  );
+                "
+              >
+                <h2 class="text-base font-medium text-indigo">
+                  Construction Advisor
+                </h2>
+                <h1 class="text-2xl font-semibold mb-3">
+                  NextJs, NodeJs, MongoDb
+                </h1>
+                <p class="leading-relaxed mb-3">
+                  Explore my Construction App! Built to streamline project
+                  management and coordination, this app helps track construction
+                  tasks, deadlines, and team collaboration, showcasing my skills
+                  in developing practical solutions for the construction
+                  industry.
+                </p>
+                <div class="flex items-center flex-wrap">
+                  <a
+                    href="https://github.com/hashim-i222478"
+                    class="text-gray-700 inline-flex items-center md:mb-2 lg:mb-0"
+                    ><i class="fa-brands fa-github text-2xl"> </i
+                  ></a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <script src="js/animations.js"></script>
+  </body>
+</html>

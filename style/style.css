@@ -1,0 +1,113 @@
+body {
+  font-family: "Roboto Condensed", sans-serif;
+  padding-bottom: 20px;
+}
+
+@media (max-width: 640px) {
+  .flex-container {
+    flex-direction: column;
+    padding: 0 4px;
+  }
+  .section {
+    width: 100% !important;
+    margin: 0;
+    padding: 16px;
+    box-sizing: border-box;
+    overflow: hidden;
+    text-align: center;
+  }
+  .personal-profile {
+    flex-direction: column;
+    justify-content: center !important;
+    align-items: center;
+  }
+  .personal-1,
+  .personal-2,
+  .personal-3 {
+    width: 90% !important;
+    max-width: 90% !important;
+    margin: 1rem 0;
+  }
+  .gallery {
+    margin: 2.5rem 0;
+  }
+  .contact-page {
+    width: 100% !important;
+    margin: 0;
+    padding: 16px;
+    box-sizing: border-box;
+    overflow: hidden;
+  }
+}
+
+@media (min-width: 641px) and (max-width: 1024px) {
+  .flex-container {
+    flex-direction: column;
+    padding: 0 8px;
+  }
+  .section {
+    width: calc(100% - 16px);
+    margin: 0;
+    padding: 24px;
+    box-sizing: border-box;
+    overflow: hidden;
+    text-align: center;
+  }
+  .personal-profile {
+    flex-direction: column;
+    justify-content: center !important;
+    align-items: center;
+  }
+  .personal-1,
+  .personal-2,
+  .personal-3 {
+    width: 50% !important;
+    max-width: 50% !important;
+    margin: 1rem 0;
+  }
+  .gallery {
+    margin: 2.5rem 0;
+  }
+  .contact-page {
+    width: calc(100% - 16px);
+    margin: 0;
+    padding: 24px;
+    box-sizing: border-box;
+    overflow: hidden;
+  }
+}
+
+@media (min-width: 1025px) {
+  .flex-container {
+    flex-direction: row;
+    padding: 0 16px;
+  }
+  .section {
+    width: calc(50% - 16px);
+    padding: 32px;
+    box-sizing: border-box;
+    overflow: hidden;
+    text-align: left;
+  }
+  .contact-page {
+    width: calc(50% - 16px);
+    padding: 32px;
+    box-sizing: border-box;
+    overflow: hidden;
+    text-align: left;
+  }
+}
+
+#menu-toggle:checked + label + #mobile-menu {
+  display: block;
+}
+
+#mobile-menu {
+  display: none;
+}
+
+.active {
+  font-weight: bold;
+  color: #000;
+  background-color: #f0f0f0;
+}

@@ -1,0 +1,289 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Portfolio</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto+Condensed:wght@400;700&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css"
+    />
+
+    <link rel="stylesheet" href="style\style.css" />
+    <link rel="stylesheet" href="style\animations.css" />
+  </head>
+
+  <body>
+    <nav class="bg-white mb-20 sticky top-0 z-50 shadow-md">
+      <div class="max-w-7xl mx-auto px-2 sm:px-6 lg:px-8">
+        <div class="relative flex items-center justify-between h-16">
+          <div class="flex-shrink-0 text-black text-lg font-bold">Hashim</div>
+
+          <input type="checkbox" id="menu-toggle" class="hidden" />
+          <label
+            for="menu-toggle"
+            class="absolute inset-y-0 right-0 flex items-center sm:hidden cursor-pointer p-2 rounded-md text-black hover:text-gray-500 hover:bg-gray-100 focus:outline-none focus:ring-2 focus:ring-inset focus:ring-gray-300"
+          >
+            <span class="sr-only">Main menu</span>
+            <svg
+              class="block h-6 w-6"
+              xmlns="http://www.w3.org/2000/svg"
+              fill="none"
+              viewBox="0 0 24 24"
+              stroke="currentColor"
+              aria-hidden="true"
+            >
+              
+            </svg>
+          </label>
+
+          <div id="mobile-menu" class="fixed inset-0 bg-white z-50 hidden">
+            <div class="flex flex-col px-2 pt-2 pb-3 space-y-1">
+              <a
+                href="home.html"
+                class="text-black active hover:bg-gray-100 hover:text-gray-700 block px-3 py-2 rounded-md text-base font-medium"
+                >Home</a
+              >
+              <a
+                href="personalProfile.html"
+                class="text-black hover:bg-gray-100 hover:text-gray-700 block px-3 py-2 rounded-md text-base font-medium"
+                >Personal Profile</a
+              >
+              <a
+                href="galleryPage.html"
+                class="text-black hover:bg-gray-100 hover:text-gray-700 block px-3 py-2 rounded-md text-base font-medium"
+                >Gallery Page</a
+              >
+              <a
+                href="careerGoals.html"
+                class="text-black hover:bg-gray-100 hover:text-gray-700 block px-3 py-2 rounded-md text-base font-medium"
+                >Career Goals</a
+              >
+              <a
+                href="projects.html"
+                class="text-black hover:bg-gray-100 hover:text-gray-700 block px-3 py-2 rounded-md text-base font-medium"
+                >Projects</a
+              >
+              <a
+                href="skillsAndInterest.html"
+                class="text-black hover:bg-gray-100 hover:text-gray-700 block px-3 py-2 rounded-md text-base font-medium"
+                >Skills & Interests</a
+              >
+              <a
+                href="contact-us.html"
+                class="text-black hover:bg-gray-100 hover:text-gray-700 block px-3 py-2 rounded-md text-base font-medium"
+                >Contact Us</a
+              >
+            </div>
+          </div>
+
+          <div class="hidden sm:block sm:ml-6">
+            <div class="flex space-x-4">
+              <a
+                href="home.html"
+                class="text-black hover:bg-gray-100 hover:text-gray-700 px-3 py-2 rounded-md text-sm font-medium"
+                >Home</a
+              >
+              <a
+                href="personalProfile.html"
+                class="text-black active hover:bg-gray-100 hover:text-gray-700 px-3 py-2 rounded-md text-sm font-medium"
+                >Personal Profile</a
+              >
+              <a
+                href="galleryPage.html"
+                class="text-black hover:bg-gray-100 hover:text-gray-700 px-3 py-2 rounded-md text-sm font-medium"
+                >Gallery Page</a
+              >
+              <a
+                href="careerGoals.html"
+                class="text-black hover:bg-gray-100 hover:text-gray-700 px-3 py-2 rounded-md text-sm font-medium"
+                >Career Goals</a
+              >
+              <a
+                href="projects.html"
+                class="text-black hover:bg-gray-100 hover:text-gray-700 px-3 py-2 rounded-md text-sm font-medium"
+                >Projects</a
+              >
+              <a
+                href="skillsAndInterest.html"
+                class="text-black hover:bg-gray-100 hover:text-gray-700 px-3 py-2 rounded-md text-sm font-medium"
+                >Skills & Interests</a
+              >
+              <a
+                href="contact-us.html"
+                class="text-black hover:bg-gray-100 hover:text-gray-700 px-3 py-2 rounded-md text-sm font-medium"
+                >Contact Us</a
+              >
+            </div>
+          </div>
+        </div>
+      </div>
+    </nav>
+    <div class="flex justify-around personal-profile">
+      <!-- Personal profile cards with animations -->
+      <div
+        class="personal-1 max-w-sm bg-white border border-gray-200 rounded-lg shadow-lg hover-lift reveal-left"
+        style="
+          background: linear-gradient(
+            92deg,
+            rgb(249, 248, 230) 0%,
+            rgb(200, 229, 241) 50%,
+            rgba(0, 255, 221, 0.34) 100%
+          );
+        "
+      >
+        <img
+          class="rounded-t-lg "
+          src="assets/Images/Hashmi/hashmi2.jpg"
+          alt=""
+        />
+
+        <div class="p-5">
+          <h5 class="mb-2 text-2xl font-bold tracking-tight text-gray-700">
+            Hashim Ahmad
+          </h5>
+
+          <p class="mb-3 font-normal text-gray-700 text-gray-700">
+            Bachelor Of Science in Software Engineering
+          </p>
+        </div>
+      </div>
+      <div
+        class="personal-2 max-w-sm bg-white border border-gray-200 rounded-lg shadow-lg hover-lift reveal"
+        style="
+          background: linear-gradient(
+            92deg,
+            rgb(249, 248, 230) 0%,
+            rgb(200, 229, 241) 50%,
+            rgba(0, 255, 221, 0.34) 100%
+          );
+        "
+      >
+        <div class="p-5">
+          <a href="#">
+            <h5 class="mb-2 text-2xl font-bold tracking-tight text-gray-700">
+              About Me
+            </h5>
+          </a>
+          <p class="mb-3 font-normal text-gray-600">
+            I was born and raised in Islamabad, where I completed my early
+            education at Army Public School (APS) and my higher secondary
+            education at Punjab College, focusing on pre-engineering subjects. I
+            am currently pursuing a Bachelor of Science in Software Engineering,
+            with a keen interest in full-stack development. My passion for
+            computers and programming from a young age has led me to a career in
+            software development. My goal is to become a skilled full-stack
+            developer, creating efficient and scalable applications. Inspired by
+            my father, a bank manager, I strive to be disciplined and dedicated
+            in my professional journey. I look forward to advancing my technical
+            skills and contributing to the tech industry with innovative
+            solutions.
+          </p>
+        </div>
+      </div>
+
+      <div
+        class="personal-3 w-full max-w-md p-4 rounded-lg shadow-lg sm:p-8 dark:border-gray-700 hover-lift reveal-right"
+        style="
+          background: linear-gradient(
+            92deg,
+            rgb(249, 248, 230) 0%,
+            rgb(200, 229, 241) 50%,
+            rgba(0, 255, 221, 0.34) 100%
+          );
+        "
+      >
+        <div class="flex items-center justify-between mb-4">
+          <h5 class="text-xl font-bold leading-none text-gray-700">
+            Social Media Links
+          </h5>
+        </div>
+        <div class="flow-root">
+          <ul role="list" class="divide-y divide-gray-200 dark:divide-gray-700">
+            <li class="py-3 sm:py-4">
+              <div class="flex items-center">
+                <div class="flex-shrink-0">
+                  <i class="fa-brands fa-github"> </i>
+                </div>
+                <div class="flex-1 min-w-0 ms-4">
+                  <a
+                    class="text-sm font-medium text-gray-600 truncate"
+                    href="https://github.com/hashim-i222478"
+                  >
+                    GitHub
+                  </a>
+                </div>
+              </div>
+            </li>
+            <li class="py-3 sm:py-4">
+              <div class="flex items-center">
+                <div class="flex-shrink-0">
+                  <i class="fa-brands fa-linkedin"></i>
+                </div>
+                <div class="flex-1 min-w-0 ms-4">
+                  <a
+                    class="text-sm font-medium text-gray-600 truncate"
+                    href="https://www.linkedin.com/in/hashim-ahmad-17745128b/"
+                  >
+                    LinkedIn
+                  </a>
+                </div>
+              </div>
+            </li>
+            <li class="py-3 sm:py-4">
+              <div class="flex items-center">
+                <div class="flex-shrink-0">
+                  <i class="fa-brands fa-instagram"></i>
+                </div>
+                <div class="flex-1 min-w-0 ms-4">
+                  <a
+                    class="text-sm font-medium text-gray-600 truncate"
+                    href="https://www.instagram.com/hashim._.ahmad?igsh=Y21zcGF0eXF1bWFn"
+                  >
+                    Instagram
+                  </a>
+                </div>
+              </div>
+            </li>
+            <li class="py-3 sm:py-4">
+              <div class="flex items-center">
+                <div class="flex-shrink-0">
+                  <i class="fa-brands fa-facebook"></i>
+                </div>
+                <div class="flex-1 min-w-0 ms-4">
+                  <a
+                    class="text-sm font-medium text-gray-600 truncate"
+                    href="https://www.facebook.com/hash.ah.125?mibextid=ZbWKwL"
+                  >
+                    Facebook
+                  </a>
+                </div>
+              </div>
+            </li>
+            <li class="pt-3 pb-0 sm:pt-4">
+              <div class="flex items-center">
+                <div class="flex-shrink-0">
+                  <i class="fa-solid fa-envelope"></i>
+                </div>
+                <div class="flex-1 min-w-0 ms-4">
+                  <p class="text-sm font-medium text-gray-600 truncate">
+                    Gmail
+                  </p>
+                  <p class="text-sm text-gray-500 truncate">
+                    hasimahmad@gmail.com
+                  </p>
+                </div>
+              </div>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </div>
+    <script src="js/animations.js"></script>
+  </body>
+</html>
